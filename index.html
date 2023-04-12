@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap demo</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+		integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+		integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive-style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+	<header class="header-wrapper" id="header">
+		<div class="container">
+			<div class="row">
+				<nav class="navbar header-style navbar-expand-lg fixed-top">
+					<div class="container">
+						<a class="navbar-brand" href="#">Portfolio</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<!--<span class="navbar-toggler-icon"></span>-->
+							<span><i class='bx bx-align-right navbar-toggler-icon'></i></span>
+						</button>
+						<div class="collapse justify-content-end navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav menu-navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="#home">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#about">About</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#skills">Skills</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#portfolio">Portfolio</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#contact">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<section class="home-wrapper" id="home">
+		<div class="container">
+			<div class="row">
+				<div class="home-content col-lg-5 offset-1">
+					<h4>Hello!</h4>
+					<h1 class="mb-4 mt-3">I'm Umar</h1>
+					<h3>Shaikh</h3>
+					<p class="mb-4 mt-3"><span>A Web Developer</span></p>
+					<div class="social">
+						<a href="https://www.linkedin.com/in/shaikh-mohd-umar-4a246a16b" target="_blank"><i
+								class='bx bxl-linkedin-square'></i></a>
+						<a href="https://github.com/Umar-Shaikh99" target="_blank" class="mx-4"><i
+								class='bx bxl-github'></i></a>
+					</div>
+					<p>
+						<a href="cv/UmarResume.pdf" download="" class="btn py-3 px-4 hire-btn">Hire me</a>
+						<a href="#portfolio" class="btn btn-outline-light py-3 px-4 work-btn">My works</a>
+					</p>
+				</div>
+				<div class="col-lg-6 mb-4 mb-lg-0 mt-sm-5 mt-md-5">
+					<img src="images/developer.png" alt="image" class="img-fluid rounded-4 w-auto updown-animation">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about-wrapper" id="about">
+		<div class="container">
+			<div class="row justify-content-between align-items-center">
+				<div class="col-lg-5 mb-4 mb-lg-0">
+					<img src="images/dev-about-img.png" alt="image" class="img-fluid rounded-4">
+				</div>
+				<div class="col-lg-7 ps-lg-5 text-center text-lg-start">
+					<div class="my-3 mb-lg-0">
+						<h2 class="heading">About <span>Me</span></h2>
+						<p class="head-para">Hello, and welcome to my website! My name is Umar Shaikh, and I am a web developer with a passion for creating innovative and user-friendly websites.</p>
+					</div>
+					<div class="pt-4">
+						<ul class="nav nav-pills mb-3 justify-content-center justify-content-lg-between" id="pills-tab"
+							role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="pills-skills-tab" data-bs-toggle="pill"
+									data-bs-target="#pills-skills" type="button" role="tab" aria-controls="pills-skills"
+									aria-selected="true">My Skills</button>
+							</li>
+
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="pills-Experience-tab" data-bs-toggle="pill"
+									data-bs-target="#pills-Experience" type="button" role="tab"
+									aria-controls="pills-Experience" aria-selected="false">Experience</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="pills-Education-tab" data-bs-toggle="pill"
+									data-bs-target="#pills-Education" type="button" role="tab"
+									aria-controls="pills-Education" aria-selected="false">Education</button>
+							</li>
+						</ul>
+						<div class="tab-content" id="pills-tabContent">
+							<div class="tab-pane fade show active" id="pills-skills" role="tabpanel"
+								aria-labelledby="pills-skills-tab" tabindex="0">
+								<div class="single-progress">
+									<h6>Javascript</h6>
+									<div class="progress" role="progressbar" aria-label="Basic example"
+										aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+										<div class="progress-bar" style="width: 60%"></div>
+									</div>
+									<span class="label">60%</span>
+
+								</div>
+								<div class="single-progress">
+									<h6>Html</h6>
+									<div class="progress" role="progressbar" aria-label="Basic example"
+										aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+										<div class="progress-bar" style="width: 80%"></div>
+									</div>
+									<span class="label">80%</span>
+								</div>
+								<div class="single-progress">
+									<h6>Css</h6>
+									<div class="progress" role="progressbar" aria-label="Basic example"
+										aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+										<div class="progress-bar" style="width: 90%"></div>
+									</div>
+									<span class="label">90%</span>
+								</div>
+								<div class="single-progress">
+									<h6>Bootstrap</h6>
+									<div class="progress" role="progressbar" aria-label="Basic example"
+										aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+										<div class="progress-bar" style="width: 95%"></div>
+									</div>
+									<span class="label">95%</span>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="pills-Experience" role="tabpanel"
+								aria-labelledby="pills-Experience-tab" tabindex="0">
+								<div class="container">
+									<div class="timeline">
+										<div
+											class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+											<div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+												<h3 class=" text-light">Web Development Intern</h3>
+												<p>Design & Develop Html Template, Change Content Of The Website, On Page SEO</p>
+											</div>
+											<div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+												<img src="images/ux.png" class="img-fluid" alt="img">
+											</div>
+											<div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+												<time>2023-02-5</time>
+											</div>
+										</div>
+										<div
+											class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+											<div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+												<h3 class=" text-light">Web Design & Development Intern</h3>
+												<p>Develop Static Web Pages By Using Html, Css, Bootstrap. SEO On Page Changes, Edit & Manage Content Of Website</p>
+											</div>
+											<div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+												<img src="images/app-development.png" class="img-fluid" alt="img">
+											</div>
+											<div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+												<time>2022-12-19</time>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="pills-Education" role="tabpanel"
+								aria-labelledby="pills-Education-tab" tabindex="0">
+								<div class="container">
+									<div class="timeline">
+										<div
+											class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+											<div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+												<h3 class=" text-light">B.S.C Information Technology</h3>
+												<p>Completed My Graduation From Mumbai University & Secure 8.9 CGPI First Class</p>
+											</div>
+											<div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+												<img src="images/student.png" class="img-fluid" alt="img">
+											</div>
+											<div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+												<time>2022</time>
+											</div>
+										</div>
+										<div
+											class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+											<div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+												<h3 class=" text-light">Higher Secondary Science</h3>
+												<p>Completed My Higher Secondary education From M.H Saboo Siddik College From Science & Maths As My Core Subjects & Secure 58.6% Percentile</p>
+											</div>
+											<div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+												<img src="images/university.png" class="img-fluid" alt="img">
+											</div>
+											<div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+												<time>2017</time>
+											</div>
+										</div>
+										<div
+											class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+											<div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+												<h3 class=" text-light">S.S.C 10th English</h3>
+												<p>Completed My 10Th Boards From Maharashtra Boards & Secure 72.80% Percentile</p>
+											</div>
+											<div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+												<img src="images/university.png" class="img-fluid" alt="img">
+											</div>
+											<div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+												<time>2015</time>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="skill-wrapper" id="skills">
+		<div class="container">
+			<div class="row mt-lg-3">
+				<div class="my-3 mb-lg-0 text-center">
+					<h2 class="heading">My <span>Skills</span></h2>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint earum in pariatur rem omnis
+						tempora?</p>
+				</div>
+				<div class="col-lg-6 col-md-6 mb-4">
+					<div class="card">
+						<div class="card-body text-center text-md-start text-lg-center">
+							<span><i class='bx bxl-javascript'></i></span>
+							<h3>Javascript / ES6</h3>
+						</div>
+					</div>
+				</div>
+				<!--<div class="col-lg-4 col-md-6 mb-4">
+					<div class="card">
+						<div class="card-body text-center text-md-start text-lg-center">
+							<span><i class='bx bxl-jquery'></i></span>
+							<h3>JQuery</h3>
+						</div>
+					</div>
+				</div>-->
+				<div class="col-lg-6 col-md-6 mb-4">
+					<div class="card">
+						<div class="card-body  text-center text-md-start text-lg-center">
+							<span><i class='bx bxl-html5'></i></span>
+							<h3>Html / Html5</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 mb-4">
+					<div class="card">
+						<div class="card-body  text-center text-md-start text-lg-center">
+							<span><i class='bx bxl-bootstrap'></i></span>
+							<h3>Bootstrap</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 mb-4">
+					<div class="card">
+						<div class="card-body text-center text-md-start text-lg-center">
+							<span><i class='bx bxl-css3'></i></span>
+							<h3>Css</h3>
+						</div>
+					</div>
+				</div>
+				<!--<div class="col-lg-4 col-md-6 mb-4">
+					<div class="card">
+						<div class="card-body text-center text-md-start text-lg-center">
+							<span><i class='bx bxl-postgresql'></i></span>
+							<h3>Sql</h3>
+						</div>
+					</div>
+				</div>-->
+			</div>
+		</div>
+	</section>
+	<section class="portfolio-wrapper" id="portfolio">
+		<div class="container">
+			<div class="row portfolio-container justify-content-center">
+				<div class="my-3 mb-lg-0 text-center">
+					<h2 class="heading mb-5">Latest <span>Projects</span></h2>
+				</div>
+				<div class="card mx-4 portfolio-box col-lg-4 col-md-6 mb-5" style="width: 35rem;">
+                    <img src="images/developer.png">
+                    <div class="card-img-overlay portfolio-layer">
+                        <h4>Ecommerce Landing Page</h4>
+                        <p class="card-text">An Ecommerce Landing Page</p>
+                        <a href="https://comforty-chair.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>    
+                    </div>
+                  </div>
+				  <div class="card mx-4 portfolio-box col-lg-4 col-md-6 mb-5" style="width: 35rem;">
+                    <img src="images/developer.png">
+                    <div class="card-img-overlay portfolio-layer">
+                        <h4>Stack Company Landing Page</h4>
+                        <p class="card-text">A Service Based Company Landing Page</p>
+                        <a href="https://stack-landing-page.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>    
+                    </div>
+                  </div>
+				  <div class="card mx-4 portfolio-box col-lg-4 col-md-6 mb-5" style="width: 35rem;">
+                    <img src="images/developer.png">
+                    <div class="card-img-overlay portfolio-layer">
+                        <h4>Temperature Converter</h4>
+                        <p class="card-text">A Multi-Functional Js Temperature Converter</p>
+                        <a href="https://js-temperatureconverter.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>    
+                    </div>
+                  </div>
+			</div>
+		</div>
+	</section>
+	<section class="contact-wrapper" id="contact">
+		<div class="my-3 mb-lg-0 text-center">
+			<h2 class="heading mb-5">Get <span>In Touch</span></h2>
+		</div>
+		<div class="container justify-content-center d-flex">
+			<div class="row">
+				<form class="rounded-2">
+					<input type="text" aria-label="Full name" class="form-control rounded-3" placeholder="Your Full Name..">
+					<input type="tel" aria-label="First name" class="form-control rounded-3" placeholder="Your Contact Number..">
+					<input type="text" aria-label="First name" class="form-control rounded-3" placeholder="Your Email..">
+					<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+				   <input type="submit" value="Send Message" class="submit-btn">  
+				</form>
+			</div>
+			
+		</div>
+	</section>
+	<section class="footer-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="social col-lg-6 d-flex justify-content-center align-items-center">
+					<a href="https://www.linkedin.com/in/shaikh-mohd-umar-4a246a16b" target="_blank"><i
+							class='bx bxl-linkedin-square'></i></a>
+					<a href="https://github.com/Umar-Shaikh99" target="_blank" class="mx-4"><i
+							class='bx bxl-github'></i></a>
+							
+				</div>
+				<div class="col-lg-6">
+					<h4>copyright @2023 All Rights Reserved By Umar Shaikh</h4>
+				</div>
+				
+
+			</div>
+		</div>
+	</section>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+		crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
